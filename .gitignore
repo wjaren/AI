@@ -1,3 +1,4 @@
 python_ml/
 machine_learning/data/
 machine_learning/*.dot
+machine_learning/model
