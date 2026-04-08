@@ -1,4 +1,5 @@
 machine_learning/*.dot
 machine_learning/model
-*/data
+data
 deep_learning/checkpoints/
+deep_learning/runs/
