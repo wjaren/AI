@@ -132,15 +132,15 @@ def set_seed(seed: int = 42) -> None:
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
+if __name__ == "__main__":
+    set_seed(42)
 
-set_seed(42)
+    plt.rcParams['font.sans-serif'] = ['SimHei']           # 设置中文字体为 SimHei
+    plt.rcParams['axes.unicode_minus'] = False             # 解决负号显示问题
 
-plt.rcParams['font.sans-serif'] = ['SimHei']           # 设置中文字体为 SimHei
-plt.rcParams['axes.unicode_minus'] = False             # 解决负号显示问题
-
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-print('Using device:', device)
-print('Torch version:', torch.__version__)
+    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+    print('Using device:', device)
+    print('Torch version:', torch.__version__)
 
 # =========================
 # PyTorch 通用训练器：早停、训练曲线、断点续训、评估与结果分析

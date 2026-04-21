@@ -1,5 +1,5 @@
 def main():
-    print("Finished studying 1.17")
+    print("Finished studying 1.20")
 
 
 if __name__ == "__main__":
