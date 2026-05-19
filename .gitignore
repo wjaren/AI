@@ -1,7 +1,6 @@
-machine_learning/*.dot
 machine_learning/model
 data
 deep_learning/checkpoints/
 deep_learning/runs/
-deep_learning/*.dot
+**/*.dot
 __pycache__/
